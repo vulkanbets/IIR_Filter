@@ -5,7 +5,7 @@ module tb_IIR_Filter;
 //Inputs
 reg CLK = 0;                            // Clock
 // Clock generation
-always #60 CLK <= ~CLK;
+always #10 CLK <= ~CLK;
 
 // Instantiate DUT
 top  top( .CLK(CLK) );                  // Clock
